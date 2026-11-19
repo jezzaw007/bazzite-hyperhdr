@@ -2,7 +2,7 @@
 HyperHDR working on Bazzite  as a single compose file
 
 # Description
-I was trying to get HyperHDR working on bazzite without layering it usingh rpm-ostree
+I was trying to get HyperHDR working on bazzite without layering it using rpm-ostree
 I had read that the preferred choice fo rthis app was to use a distroboc container
 After a little messing about using soem prebuilt HyperHDR images, I soon learned that they were all aimed primarily at USB 
 attached devices only, and did not contain any pipewire library
