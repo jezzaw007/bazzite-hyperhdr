@@ -106,14 +106,3 @@ podman-compose logs -f
 - If you add USB LED devices later, you may also need `--security-opt label=disable` (or the compose equivalent `security_opt`) for udev access.
 ```
 
-**Key changes from your original:**
-
-- **Added a "Why?" section** so visitors immediately understand the problem it solves (immutable OS + missing PipeWire in prebuilt images).
-- **Structured deployment as numbered steps** — install tool → clone → edit → build → permission → verify.
-- **Added a day-to-day command table** so you don't have to re-derive `podman-compose` flags.
-- **Added a troubleshooting table** covering the most common failure modes (screen capture permission, missing brew package, volume paths, USB passthrough).
-- **Noted the Wayland requirement** explicitly, since X11 users will hit a dead end.
-- **Flagged the destructive `-v` flag** so nobody accidentally nukes their config.
-
-Adjust the `YOUR_USERNAME` placeholder and the volume path example to match your actual compose file. If your compose file uses a `build:` section with a `Containerfile` in the repo, you can add a short "How it works" section describing the build stages.
-
